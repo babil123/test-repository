@@ -19,8 +19,8 @@ jobs:
      steps:
     
       - name: Checkot repository
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v1
 
       
       - name: List files
-        run: ls -la
+        run: ls -a
