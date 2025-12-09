@@ -19,7 +19,7 @@ jobs:
      steps:
     
       - name: Checkot repository
-      - uses: actions/checkout@v1
+        uses: actions/checkout@v6.0.1
 
       
       - name: List files
