@@ -1,0 +1,32 @@
+name: demo CI/CD
+
+on:
+  
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+
+jobs:
+ 
+  build:
+    
+    runs-on: ubuntu-latest
+
+   
+    steps:
+      - name: Checkot repository
+      - uses: actions/checkout@v4
+
+      
+      - name: List files
+        run: ls -la
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
